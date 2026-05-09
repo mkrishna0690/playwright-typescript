@@ -1,0 +1,25 @@
+{
+    "complierOptions":{
+        "target":"ESNext",
+        "module": "CommonJS",
+        "moduleResoultion": "node",
+        "strict":true,
+        "esModuleInterop":true,
+        "skipLibCheck":true,
+        "forceConsistentCasingInFileName":true,
+        "outDir":"./dist",
+        "rootDir":".",
+        "resolveJsonModule":true,
+        "types":["node","playwright"],
+        "declaration":true,
+        "sourceMap":true
+    },
+    "include":[
+        "src/**/*.ts", //Include all Typescript files in the 'src' folder
+        "tests/**/*.ts" //Include all Typescript files in the 'tests' folder
+    ],
+    "exclude":[
+        "node_modules", //Exclude node_modules from compilation
+        "dist" //Exclude the output directory
+    ]
+}
